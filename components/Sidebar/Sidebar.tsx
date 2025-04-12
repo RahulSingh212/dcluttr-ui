@@ -8,7 +8,7 @@ import {
 
 export default function Sidebar() {
   return (
-    <div className="h-full flex flex-col w-[288px]">
+    <div className="h-full flex flex-col w-[380px] flex-shink-0">
       <div className="w-full flex justify-between px-1.5 py-3 space-x-1">
         <Image
           alt="Perfora"
