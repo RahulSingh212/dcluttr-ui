@@ -1,4 +1,5 @@
 // import Image from "next/image";
+"use client"
 
 import MainSection from "@/components/MainSection";
 import Sidebar from "@/components/Sidebar";
