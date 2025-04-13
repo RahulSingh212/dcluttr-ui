@@ -3,13 +3,18 @@ import { useState } from "react";
 import { tabList } from "@/lib/tabLinks";
 import { cn } from "@/lib/cn";
 
+type TabInfo = {
+  name: string;
+  imageUrl: string;
+}
+
 export const TabSection = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
     <div className="w-full flex px-4 py-2">
       <div className="flex space-x-2 border-[1px] border-[#EBEBEB] rounded-xl p-1">
-        {tabList.map((tab: any, index: number) => (
+        {tabList.map((tab: TabInfo, index: number) => (
           <button
             key={index}
             className={cn(

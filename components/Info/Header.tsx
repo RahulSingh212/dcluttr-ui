@@ -11,6 +11,8 @@ import {
 import { DateRangePicker } from "react-date-range";
 import { formatDate } from "@/lib/utils";
 
+import { RangeKeyDict } from "react-date-range";
+
 export default function Header() {
   const [isCalendarOpen, setIsCalendarOpen] = useState(false);
   const [startDate, setStartDate] = useState<Date>(new Date());
@@ -22,10 +24,10 @@ export default function Header() {
     key: "selection",
   };
 
-  const handleDateRangeSelect = (ranges: any) => {
-    console.log(ranges);
-    setStartDate(ranges.selection.startDate);
-    setEndDate(ranges.selection.endDate);
+  const handleDateRangeSelect = (ranges: RangeKeyDict) => {
+    const range = ranges.selection;
+    setStartDate(range.startDate!);
+    setEndDate(range.endDate!);
   };
 
   const showCalendarHandler = () => {

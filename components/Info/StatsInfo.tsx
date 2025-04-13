@@ -134,7 +134,7 @@ const SkulLevelTile = ({ skuInfo, isBold }: SkuLevelTileProps) => {
           <input
             type="checkbox"
             checked={isActive}
-            onChange={(e: any) => setIsActive((prev) => !prev)}
+            onChange={() => setIsActive((prev) => !prev)}
             className="w-5 h-5 accent-[#027056] cursor-pointer"
           />
         )}
