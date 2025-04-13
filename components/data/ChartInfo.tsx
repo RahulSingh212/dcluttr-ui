@@ -11,7 +11,7 @@ export const ChartInfo = ({ title }: ChartInfoProps) => {
   return (
     <div className="flex flex-col rounded-lg border-[1px] border-[#EBEBEB] w-[350px] bg-white flex-shink-0">
       <div className="flex w-full justify-between px-4 py-2 align-middle items-center">
-        <p className="whitespace-nowrap">{title}</p>
+        <h2 className="whitespace-nowrap">{title}</h2>
         <QuestionMarkCircleIcon className="h-4 w-4 cursor-pointer" />
       </div>
 

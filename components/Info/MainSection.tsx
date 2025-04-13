@@ -3,6 +3,8 @@ import Header from "./Header";
 import { TabSection } from "./TabSection";
 import { GraphInfo } from "../data/GraphInfo";
 import { ChartInfo } from "../data/ChartInfo";
+import { StatsInfo } from "./StatsInfo";
+import { skuLevelDataList } from "@/lib/dataInfo";
 
 export default function MainSection() {
   return (
@@ -17,8 +19,8 @@ export default function MainSection() {
       <div className="w-full h-[1px] bg-[#EBEBEB]" />
       <TabSection />
       <div className="w-full h-[1px] bg-[#EBEBEB]" />
-      <div className="flex flex-col w-full p-4 bg-[#DFEAE8]/40">
-        <div className="flex w-full space-x-3 overflow-x-scroll">
+      <div className="flex flex-col w-full p-4 bg-[#DFEAE8]/40 space-y-12">
+        <div className="flex w-full space-x-1.5 overflow-x-scroll">
           <GraphInfo
             title="Sales (MRP)"
             currentMonthValue={125.49}
@@ -31,6 +33,18 @@ export default function MainSection() {
           />
           <ChartInfo title="Top Cities" />
         </div>
+
+        <StatsInfo
+          title={"SKU level data"}
+          description={"Analytics for all your SKUs"}
+          skuLevelDataList={skuLevelDataList}
+        />
+
+        <StatsInfo
+          title={"City level data"}
+          description={"Analytics for all your Cities"}
+          skuLevelDataList={skuLevelDataList}
+        />
       </div>
     </div>
   );

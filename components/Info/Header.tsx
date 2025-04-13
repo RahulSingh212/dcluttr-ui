@@ -35,7 +35,7 @@ export default function Header() {
   return (
     <>
       <div className="w-full flex justify-between rounded-t-lg px-4 py-2 align-middle items-center">
-        <p className="text-black">Quick Commerce</p>
+        <h1 className="text-black">Quick Commerce</h1>
         <div className="flex space-x-2">
           <div className="flex space-x-2 border-[1px] px-3 py-2 rounded-lg align-middle items-center">
             <Image
