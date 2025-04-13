@@ -20,7 +20,7 @@ export default function Sidebar() {
         <div className="w-full flex px-2 align-middle items-center">
           <div className="w-full flex border-[1px] border-[#309E96] rounded-xl p-1.25 justify-between align-middle items-center">
             <div className="flex w-full items-center align-middle">
-              <div className="flex items-center justify-center h-7 w-7 p-1 rounded-xl cursor-pointer text-white bg-[#309E96] flex-shrink-0 font-semibold text-sm">
+              <div className="flex items-center justify-center h-7 w-8 p-1 rounded-lg cursor-pointer text-white bg-[#309E96] flex-shrink-0 font-semibold text-sm">
                 SS
               </div>
               <p className="text-black ml-3">Text_brand</p>

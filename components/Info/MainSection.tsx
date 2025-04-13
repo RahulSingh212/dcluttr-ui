@@ -1,5 +1,6 @@
 import { cn } from "@/lib/cn";
 import Header from "./Header";
+import { TabSection } from "./TabSection";
 
 export default function MainSection() {
   return (
@@ -11,6 +12,8 @@ export default function MainSection() {
       )}
     >
       <Header />
+      <div className="w-full h-[1px] bg-[#EBEBEB]" />
+      <TabSection />
       <div className="w-full h-[1px] bg-[#EBEBEB]" />
     </div>
   );
